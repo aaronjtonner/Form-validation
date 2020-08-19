@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="main.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Validation</title>
+	</head>
+	<body>
+		<section class="form-container">
+			<form action="#" id="form" class="form">
+				<h2>Registration</h2>
+				<div class="form-control">
+					<label for="username">Username</label>
+					<input id="username" type="text" placeholder="Enter username" />
+					<small>Error message</small>
+				</div>
+
+				<div class="form-control">
+					<label for="email">Email</label>
+					<input id="email" type="email" placeholder="Enter email" />
+					<small>Invalid email</small>
+				</div>
+
+				<div class="form-control">
+					<label for="password">Password</label>
+					<input id="password" type="password" placeholder="Enter password" />
+					<small>Password must be greater than 6 characters</small>
+				</div>
+
+				<div class="form-control">
+					<label for="repeat">Confirm Password</label>
+					<input id="repeat" type="password" placeholder="Confirm" />
+					<small>Passwords do not match</small>
+				</div>
+
+				<button>Submit</button>
+			</form>
+		</section>
+		<script src="app.js"></script>
+	</body>
+</html>
